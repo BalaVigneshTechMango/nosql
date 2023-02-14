@@ -14,13 +14,9 @@ import com.crud.nosql.service.NosqlService;
 @RestController
 @RequestMapping("/nosql")
 public class NoSqlDemoController {
-
 	@Autowired
 	private NosqlService nosqlService;
-	
-	
-	
-
+///kdkdlksl
 	@PostMapping("/insert")
 	public void insertMethod(@RequestBody EmployeeEntity employeeEntity) {
 		nosqlService.insertValues(employeeEntity);
@@ -35,4 +31,5 @@ public class NoSqlDemoController {
 	public void update(@RequestBody EmployeeEntity employeeEntity) {
 		nosqlService.update(employeeEntity);
 	}
+	public void udh() {}
 }

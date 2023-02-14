@@ -17,12 +17,15 @@ public class NoSqlDemoController {
 
 	@Autowired
 	private NosqlService nosqlService;
+	
+	
+	
 
 	@PostMapping("/insert")
 	public void insertMethod(@RequestBody EmployeeEntity employeeEntity) {
 		nosqlService.insertValues(employeeEntity);
 	}
-
+//dbjdb
 	@PostMapping("/getAll")
 	public List<EmployeeEntity> getAll() {
 	 List<EmployeeEntity> response=nosqlService.getAll();
